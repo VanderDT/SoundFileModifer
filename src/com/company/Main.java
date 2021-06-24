@@ -7,10 +7,10 @@ public class Main {
     static ArrayList<Integer> arrayList = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
-        String file = "P:\\Kolobok_Server\\amb\\config.cpp";
+        String file = "P:\\___\\amb\\config.cpp";
         String word = "closureShotHomeSilencedAttenuationCurve";
 
-        fillsArray("P:\\Kolobok_Server\\amb\\List.txt");
+        fillsArray("P:\\___\\amb\\List.txt");
         System.out.println(grepLineNumber(file, word)); //Получить № строки с вхождением слова внутри файла
         deleteLineNumber(file,arrayList);
 
@@ -44,7 +44,7 @@ public class Main {
 
     public static void deleteLineNumber(String file, ArrayList list) throws IOException {
         File sourceFile = new File(file);
-        File outputFile = new File("P:\\Kolobok_Server\\amb\\config2.cpp");
+        File outputFile = new File("P:\\___\\amb\\config2.cpp");
 
         //    Записываем в новый файл все данные, кроме удаляемой строки.
 
